@@ -41,4 +41,10 @@ Plotly
 
 
 
+Dataset:- https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset
+
+
+
+
+
 https://smart-agriculture-advisior.streamlit.app/
