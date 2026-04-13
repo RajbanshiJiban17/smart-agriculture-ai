@@ -36,3 +36,9 @@ Streamlit
 Scikit-learn
 XGBoost
 Plotly
+
+
+
+
+
+https://smart-agriculture-advisior.streamlit.app/
