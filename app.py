@@ -194,14 +194,15 @@ CROP_EMOJI = {
 }
 FEATURES = ["N","P","K","temperature","humidity","ph","rainfall"]
 
-@st.cache_data
-def load_data():
-    df = pd.read_csv(r"C:\Users\User\Desktop\Agriculture\data\Crop.csv")
-    return df
+
+BASE_DIR = os.path.dirname(__file__)
+file_path = os.path.join(BASE_DIR, "data", "Crop.csv")
+
+df = pd.read_csv(file_path)
 
 @st.cache_resource
 def load_models():
-    df = load_data()
+   # df = load_data()
     le = LabelEncoder()
     df["enc"] = le.fit_transform(df["label"])
     X = df[FEATURES].values
@@ -229,7 +230,7 @@ def load_models():
         "X_te": X_te, "X_te_sc": X_te_sc, "y_te": y_te
     }
 
-df = load_data()
+#df = load_data()
 models_data = load_models()
 le     = models_data["le"]
 scaler = models_data["scaler"]
