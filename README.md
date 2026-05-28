@@ -45,7 +45,7 @@ Dataset:- https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-datas
 
 
 
-https://krishi-ai-frontend-cixu-git-main-rajbanshijiban17s-projects.vercel.app/
+https://krishi-ai-frontend-cixu.vercel.app/
 
 
 
